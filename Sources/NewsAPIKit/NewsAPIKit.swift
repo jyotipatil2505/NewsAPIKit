@@ -2,7 +2,7 @@
 // https://docs.swift.org/swift-book
 
 
-struct NewsAPIKit {
+public struct NewsAPIKit {
     
     public init() {
         
