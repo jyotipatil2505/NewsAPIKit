@@ -7,13 +7,13 @@
 import Foundation
 
 public struct ArticleModel: Codable, Identifiable {
-    let title: String
-    let description: String?
-    let url: String
-    let urlToImage: String?
-    var isBookmarked: Bool = false
-    let publishedAt: String
-    var id: String {
+    public let title: String
+    public let description: String?
+    public let url: String
+    public let urlToImage: String?
+    public var isBookmarked: Bool = false
+    public let publishedAt: String
+    public var id: String {
         title + publishedAt
     }
 
