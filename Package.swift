@@ -19,7 +19,7 @@ let package = Package(
         .target(
             name: "NewsAPIKit",
             dependencies: [],
-            path: "Sources"
+            path: "Sources/NewsAPIKit"
         ),
         .testTarget(
             name: "NewsAPIKitTests",
