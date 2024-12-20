@@ -4,11 +4,14 @@
 
 public struct NewsAPIKit {
     
+    let service: APIServiceProtocol?
+    
     public init() {
-        
+        service = APIServiceManager()
     }
     
-    public func fetchNews() {
+    public func fetchNews() async throws -> [ArticleModel]? {
         print("fetchNews called")
+        return try await service?.fetchNews(category: "all")
     }
 }
