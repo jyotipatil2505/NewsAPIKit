@@ -8,7 +8,7 @@ public struct NewsAPIKit {
         
     }
     
-    func fetchNews() {
+    public func fetchNews() {
         print("fetchNews called")
     }
 }
