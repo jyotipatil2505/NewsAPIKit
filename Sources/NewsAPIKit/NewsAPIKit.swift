@@ -12,6 +12,6 @@ public struct NewsAPIKit {
     
     public func fetchNews() async throws -> [ArticleModel]? {
         print("fetchNews called")
-        return try await service?.fetchNews(category: "all")
+        return try await service?.fetchNews(category: nil)
     }
 }
